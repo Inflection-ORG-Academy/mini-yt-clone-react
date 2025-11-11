@@ -32,16 +32,22 @@ function App() {
   return (
     <div>
       <Navbar onMenuBtnClick={toggleSidebar} isSidebarOpen={isSidebarOpen} />
-      <main className="flex">
+      <main className="flex mt-16">
         <div
-          className={`transition-all duration-1000 ${
-            isSidebarOpen ? "w-[200px] overflow-auto" : "w-0 overflow-hidden"
+          className={`transition-all duration-1000 fixed top-16 bottom-0 left-0 ${
+            isSidebarOpen
+              ? "min-w-[220px] w-[220px] overflow-auto"
+              : "w-0 overflow-hidden"
           }`}
         >
           <Sidebar />
         </div>
 
-        <section className="min-h-screen w-full">
+        <section
+          className={`transition-all duration-1000 min-h-screen w-full  ${
+            isSidebarOpen ? "ml-[220px]" : "ml-0"
+          }`}
+        >
           <Routes>
             <Route path="/" element={<HomePage />} />
 
