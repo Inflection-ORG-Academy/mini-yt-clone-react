@@ -5,6 +5,7 @@ import YtShortVideoCard from "../components/YtShortVideoCard";
 function HomePage() {
   const videos = [
     {
+      id: "Ge0MSjDG_g4",
       thumbnail:
         "https://i.ytimg.com/vi/k-ZHBv1Db6M/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAc2daDONLR0tpSWO41AgpGDzmZMg",
       chanelLogo:
@@ -15,6 +16,7 @@ function HomePage() {
       chanelName: "Radhika Chopra",
     },
     {
+      id: "bQNT4L9uGaU",
       thumbnail:
         "https://i.ytimg.com/vi/XRzRGNPaGt8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCVXklirC8nEHYxLcmAUppieY6nng",
       chanelLogo:
@@ -26,6 +28,7 @@ function HomePage() {
       chanelName: "Anna Codes",
     },
     {
+      id: "_CWcBWSKItk",
       thumbnail:
         "https://i.ytimg.com/vi/k-ZHBv1Db6M/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAc2daDONLR0tpSWO41AgpGDzmZMg",
       chanelLogo:
@@ -36,6 +39,7 @@ function HomePage() {
       chanelName: "Radhika Chopra",
     },
     {
+      id: "6xk1g20qdVw",
       thumbnail:
         "https://i.ytimg.com/vi/XRzRGNPaGt8/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCVXklirC8nEHYxLcmAUppieY6nng",
       chanelLogo:
@@ -47,6 +51,7 @@ function HomePage() {
       chanelName: "Anna Codes",
     },
     {
+      id: "C7RBGKwEWhc",
       thumbnail:
         "https://i.ytimg.com/vi/k-ZHBv1Db6M/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAc2daDONLR0tpSWO41AgpGDzmZMg",
       chanelLogo:

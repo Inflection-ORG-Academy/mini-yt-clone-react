@@ -5,6 +5,7 @@ import HomePage from "./pages/Home";
 import ErrorPage from "./ErrorPage";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
+import VideoDetails from "./pages/VideoDetails";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -50,6 +51,7 @@ function App() {
         >
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/videos/:vid" element={<VideoDetails />} />
 
             <Route path="*" element={<ErrorPage />} />
           </Routes>
