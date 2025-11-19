@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router";
 
 function YtCard(props) {
-  console.log(props.videoDetails.id);
-
   return (
     <figure>
       <Link to={`/videos/${props.videoDetails.id}`}>
@@ -19,7 +17,10 @@ function YtCard(props) {
             className="rounded-full h-10 w-10"
           />
           <div>
-            <h3 className="text-sm font-semibold line-clamp-2">
+            <h3
+              className="text-sm font-semibold line-clamp-2"
+              title={props.videoDetails.title}
+            >
               {props.videoDetails.title}
             </h3>
             <p className="text-xs">{props.videoDetails.chanelName}</p>

@@ -4,8 +4,6 @@ import { MdClose } from "react-icons/md";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from "react-router";
 function Navbar(props) {
-  console.log(props);
-
   const [inputValue, setInputValue] = useState("");
 
   const navigate = useNavigate();
@@ -16,6 +14,7 @@ function Navbar(props) {
         <button
           className="block md:hidden hover:cursor-pointer"
           onClick={props.onMenuBtnClick}
+          title={props.isSidebarOpen ? "Close" : "Menu"}
         >
           {props.isSidebarOpen ? (
             <MdClose size={25} />
@@ -59,6 +58,7 @@ function Navbar(props) {
                 console.log("hg");
                 setInputValue("");
               }}
+              title="Close"
             >
               <MdClose size={20} />
             </button>
@@ -66,7 +66,8 @@ function Navbar(props) {
         </div>
         <button
           type="submit"
-          className="bg-neutral-800 rounded-full rounded-l-none px-6 h-10 border border-neutral-200/30"
+          className="bg-neutral-800 rounded-full rounded-l-none px-6 h-10 border border-neutral-200/30 hover:cursor-pointer"
+          title="Search"
         >
           <FaMagnifyingGlass size={20} />
         </button>
