@@ -85,8 +85,11 @@ function HomePage() {
   return (
     <>
       <section className="flex overflow-hidden gap-1.5 px-3 py-3 fixed w-full bg-neutral-950">
-        {tabs.map((tab) => (
-          <button className="text-sm bg-neutral-700 px-3 py-1 rounded-md text-nowrap">
+        {tabs.map((tab, index) => (
+          <button
+            key={index}
+            className="text-sm bg-neutral-700 px-3 py-1 rounded-md text-nowrap"
+          >
             {tab}
           </button>
         ))}
@@ -94,7 +97,7 @@ function HomePage() {
       <section className="p-3 mt-11">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 pb-3">
           {videos.map((video) => (
-            <YtCard videoDetails={video} />
+            <YtCard videoDetails={video} key={video.id} />
           ))}
         </div>
 
@@ -102,14 +105,14 @@ function HomePage() {
           <h3 className="text-lg font-semibold my-3">Shorts</h3>
           <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-3">
             {videos.map((video) => (
-              <YtShortVideoCard videoDetails={video} />
+              <YtShortVideoCard videoDetails={video} key={video.id} />
             ))}
           </section>
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 py-6 border-t border-t-neutral-100/10">
           {videos.map((video) => (
-            <YtCard videoDetails={video} />
+            <YtCard videoDetails={video} key={video.id} />
           ))}
         </div>
       </section>
